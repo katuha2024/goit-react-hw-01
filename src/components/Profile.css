@@ -1,0 +1,75 @@
+.profile-avatar{
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    background-color: #333333;
+    margin-top: 60px;
+}
+.profile-name {
+  font-weight: 700;
+  font-size: 50px;
+  color: black;
+  margin-top: 10px;
+}
+.profile-tag{
+  font-weight: 500;
+  font-size: 45px;
+  color: dimgrey;
+}
+.profile-location{
+  font-weight: 500;
+  font-size: 40px;
+  color: dimgrey;
+}
+.profile-stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 112px 0;
+  border: 2px solid #333333;
+  background-color:gray;
+  border-radius: 0 0 8px 8px; /* Округлюємо весь блок */
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.profile-stats li {
+  flex: 1;
+  text-align: center;
+  height: 200px;
+  padding: 15px;
+  background-color: #d3d3d3;
+  border-right: 2px solid #333333;
+}
+
+.profile-stats li:last-child {
+  border-right: none;
+}
+
+/* Заголовки (Followers, Views, Likes) */
+.profile-stats span:first-child {
+  display: block;
+  font-size: 35px;
+  font-weight: 700;
+  color: black;
+  margin-top: 20px;
+}
+
+/* Числа */
+.profile-stats span:last-child {
+  display: block;
+  font-size: 35px;
+  font-weight: 700;
+  color: black;
+  margin-top: 5px;
+}
+
+.profile{
+  width: 800px;
+  height: 850px;
+  background-color: white;
+  border-radius: 10px;
+  border: solid 3px #000000;
+}

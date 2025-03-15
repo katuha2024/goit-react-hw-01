@@ -1,5 +1,6 @@
 import React from 'react';
 import './Profile.css';
+import './reset.css';
 
 function Profile({ name, tag, location, image, stats }) {
   return (
