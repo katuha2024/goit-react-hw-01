@@ -1,6 +1,9 @@
 import React from 'react';
-import Profile from './components/Profile';
-import userData from './userData.json';
+import Profile from './components/Profile'; // Імпорт профілю
+import FriendList from './components/FriendList'; // Імпорт компонента списку друзів
+import FriendListItem from './components/FriendListItem';
+import userData from './userData.json'; // Імпорт даних користувача
+import friends from './FriendList.json'; // Імпорт JSON із друзями
 import './App.css';
 
 function App() {
@@ -13,6 +16,7 @@ function App() {
         image={userData.avatar}
         stats={userData.stats}
       />
+      <FriendList friends={friends} /> {/* Передаємо friends як проп */}
     </>
   );
 }
