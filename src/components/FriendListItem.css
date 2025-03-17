@@ -6,7 +6,7 @@
   border: 2px solid #000000;
   border-radius: 8px;
   padding: 16px;
-  width: 140px; /* Фіксована ширина кожної картки */
+  width: 120px; /* Фіксована ширина кожної картки */
   text-align: center;
   background-color: #f9f9f9;
 }
@@ -19,9 +19,10 @@
 }
 
 .friend-name {
-  font-size: 1.2rem;
+  font-size: 30px;
   font-weight: 600;
   margin-bottom: 8px;
+  color: #000000;
 }
 
 .friend-status {
