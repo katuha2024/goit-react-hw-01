@@ -1,31 +1,31 @@
 import React from 'react';
-import './Profile.css';
-import './reset.css';
+import styles from './Profile.module.css'; // Модульний CSS
+import './reset.css'; // Глобальний CSS для скидання стилів
 
 function Profile({ name, tag, location, image, stats }) {
   return (
-    <div className="profile">
-      <div className="profile-header">
+    <div className={styles.profile}> {/* Використовуємо styles для модульних класів */}
+      <div className={styles.profileHeader}>
         <img
           src={image}
           alt="User avatar"
-          className="profile-avatar"
+          className={styles.profileAvatar}
         />
-        <p className="profile-name">{name}</p>
-        <p className="profile-tag">@{tag}</p>
-        <p className="profile-location">{location}</p>
+        <p className={styles.profileName}>{name}</p>
+        <p className={styles.profileTag}>@{tag}</p>
+        <p className={styles.profileLocation}>{location}</p>
       </div>
 
-      <ul className="profile-stats">
-        <li>
+      <ul className={styles.profileStats}>
+        <li className={styles.profileStatItem}>
           <span>Followers</span>
           <span>{stats.followers}</span>
         </li>
-        <li>
+        <li className={styles.profileStatItem}>
           <span>Views</span>
           <span>{stats.views}</span>
         </li>
-        <li>
+        <li className={styles.profileStatItem}>
           <span>Likes</span>
           <span>{stats.likes}</span>
         </li>

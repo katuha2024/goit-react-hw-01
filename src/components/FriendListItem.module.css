@@ -1,0 +1,39 @@
+.friendItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #000000;
+  border-radius: 8px;
+  padding: 16px;
+  width: 120px; /* Фіксована ширина кожної картки */
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.friendAvatar {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
+.friendName {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #000000;
+}
+
+.friendStatus {
+  font-size: 20px;
+  padding: 4px 8px;
+}
+
+.friendStatus.online {
+  color: #4caf50; /* Зелений для статусу онлайн */
+}
+
+.friendStatus.offline {
+  color: #f44336; /* Червоний для статусу офлайн */
+}

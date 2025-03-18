@@ -1,11 +1,12 @@
 import React from 'react';
-import FriendListItem from '../components/FriendListItem'; // Імпортуємо компонент FriendListItem
+import FriendListItem from './FriendListItem'; // Імпортуємо компонент FriendListItem
+import styles from './friendList.module.css'; // Імпортуємо стилі як модуль
 
 const FriendList = ({ friends }) => {
   return (
-    <ul className="friend-list">
+    <ul className={styles.friendList}> {/* Використовуємо styles для модульного CSS */}
       {friends.map((friend) => (
-        <li key={friend.id} className="friend-list-item">
+        <li key={friend.id} className={styles.friendListItem}> {/* Використовуємо styles і тут */}
           <FriendListItem 
             avatar={friend.avatar} 
             name={friend.name} 
