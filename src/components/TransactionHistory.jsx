@@ -1,10 +1,9 @@
 import React from 'react';
-import styles from './TransactionHistory.module.css';
-import './reset.css';
+import styles from './TransactionHistory.module.css'; // Модульний CSS
 
 const TransactionHistory = ({ items }) => {
   return (
-    <table>
+    <table className={styles.transactionTable}>
       <thead>
         <tr>
           <th>Type</th>
@@ -14,7 +13,7 @@ const TransactionHistory = ({ items }) => {
       </thead>
       <tbody>
         {items.map(({ id, type, amount, currency }) => (
-          <tr key={id}>
+          <tr key={id} className={styles.transactionRow}>
             <td>{type}</td>
             <td>{amount}</td>
             <td>{currency}</td>

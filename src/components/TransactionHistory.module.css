@@ -1,4 +1,4 @@
-table {
+.transactionTable {
   width: 100%;
   border-collapse: collapse;
   margin: 20px 0;
@@ -6,24 +6,24 @@ table {
   text-align: center;
 }
 
-th, td {
+.transactionTable th,
+.transactionTable td {
   border: 1px solid #000000;
   padding: 12px;
 }
 
-th {
-background-color: #333; /* Темно-сірий фон */
-color: #fff; /* Білий текст */
-padding: 12px; /* Простір навколо тексту */
+.transactionTable th {
+  background-color: #333; /* Темно-сірий фон */
+  color: #fff; /* Білий текст */
+  padding: 12px; /* Простір навколо тексту */
 }
 
-
-tr:nth-child(even) {
+.transactionRow:nth-child(even) {
   background-color: darkgray;
   color: #000000;
 }
-tr:nth-child(odd){
-    background-color: white;
-    color: #000000;
-}
 
+.transactionRow:nth-child(odd) {
+  background-color: white;
+  color: #000000;
+}
